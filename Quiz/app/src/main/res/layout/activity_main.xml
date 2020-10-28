@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPrimaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Domanda numero:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvSecondaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:text="2+2 =4?"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonPrecedente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Precedente"
+                android:text="Precedente"
+                android:textSize="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="8dp"/>
+
+            <Button
+                android:id="@+id/buttonVero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Corretto"
+                android:text="Vero"
+                android:textSize="10dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/buttonFalso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Errato"
+                android:text="Falso"
+                android:textSize="10dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/buttonSuccessivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Successivo"
+                android:text="Successivo"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Risposte corrette valide: "
+            android:layout_gravity="center"
+            android:id="@+id/tvTerzaText"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Risposte corrette non valide: "
+            android:layout_gravity="center"
+            android:id="@+id/tvQuartaText"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Risposte totali: "
+            android:layout_gravity="center"
+            android:id="@+id/tvQuintaText"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="239dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Suggerimento"
+            android:id="@+id/buttonSuggeriemnto"
+            android:onClick="VaiSuggerimento"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
