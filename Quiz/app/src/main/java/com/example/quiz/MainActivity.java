@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private int quesito_corrente = 0 ;
     private int risposte_totali = 0 ;
     private int risposte_corrette = 0 ;
-    private int getRisposte_corrette_non_valide = 0 ;
+    private int notvalide = 0 ;
 
 
     @Override
@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void VaiSuggerimento (View v){
+        suggerimento_Visto[quesito_corrente] = true;
         Intent i = new Intent(getApplicationContext(),Suggerimento.class);
         i.putExtra("TESTO",arrayQuesiti[quesito_corrente].getTesto());
         i.putExtra("RISPOSTA",arrayQuesiti[quesito_corrente].getRisposta());
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         tvNumeroQuesito.setText("Domanda numero: "+ quesito_corrente);
         tvTestoQuesito.setText(arrayQuesiti[quesito_corrente].getTesto());
         tvRisposteCorrette.setText("Risposte corrette valide: "+risposte_corrette);
-        tvRisposteValideNonCorrette.setText("Risposte corretta non valida: "+ getRisposte_corrette_non_valide);
+        tvRisposteValideNonCorrette.setText("Risposte corretta non valida: "+ notvalide);
         tvRisposteTotali.setText("Risposte totali: "+risposte_totali);
     }
 
@@ -82,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         aggiornaQuesito();
     }
 
+    //da controllare il perche non aumenta il valore delle risposte valide non corrette
     public void Corretto (View v){
         if(quesiti_risposti[quesito_corrente] == false){
             quesiti_risposti[quesito_corrente] = true;
@@ -90,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
             boolean risposta_corretta = q.getRisposta();
                 if (risposta_corretta == true) {
                     if (suggerimento_Visto[quesito_corrente]) {
-                        getRisposte_corrette_non_valide++;
+                        notvalide++;
                     } else {
                         risposte_corrette++;
                     }
@@ -107,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
             boolean risposta_corretta = q.getRisposta();
                 if (risposta_corretta == false) {
                     if (suggerimento_Visto[quesito_corrente]) {
-                        getRisposte_corrette_non_valide++;
+                        notvalide++;
                     } else {
                         risposte_corrette++;
                     }
@@ -118,11 +120,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onActivityResult(int request_code, int result_code, Intent dati) {
-        if (request_code != 345) return;
-        if (request_code != Activity.RESULT_OK) return;
-        if (dati == null) return;
-        suggerimento_Visto[quesito_corrente] = dati.getBooleanExtra("RISPOSTA_MOSTRATA", false);
         super.onActivityResult(request_code, result_code, dati);
+        if (request_code != 345 || request_code != Activity.RESULT_OK || dati == null) return;
+        suggerimento_Visto[quesito_corrente] = dati.getBooleanExtra("RISMOS", false);
     }
 
 }

@@ -26,12 +26,12 @@ public class Suggerimento extends Activity {
         risposta = i.getBooleanExtra("RISPOSTA",risposta);
 
         testoQuesito.setText(testo);
-       setReturnIntent();
+        setReturnIntent();
     }
 
     private void setReturnIntent(){
         Intent dati = new Intent();
-        dati.putExtra("RISPOSTA_MOSTRATA",risposta_mostrata);
+        dati.putExtra("RISMOS",risposta_mostrata);
         setResult(RESULT_OK,dati);
     }
 
