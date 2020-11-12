@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/tvTableCartella">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button android:text="01"
+                android:background="@color/white"/>
+            <Button android:text="02"
+                android:background="@color/white"/>
+            <Button android:text="03"
+                android:background="@color/white"/>
+            <Button android:text="04"
+                android:background="@color/white"/>
+            <Button android:text="05"
+                android:background="@color/white"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button android:text="06"
+                android:background="@color/white"/>
+            <Button android:text="07"
+                android:background="@color/white"
+                tools:ignore="ButtonStyle" />
+            <Button android:text="08"
+                android:background="@color/white"/>
+            <Button android:text="09"
+                android:background="@color/white"/>
+            <Button android:text="10"
+                android:background="@color/white"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button android:text="11"
+                android:background="@color/white"/>
+            <Button android:text="12"
+                android:background="@color/white"/>
+            <Button android:text="13"
+                android:background="@color/white"/>
+            <Button android:text="14"
+                android:background="@color/white"/>
+            <Button android:text="15"
+                android:background="@color/white"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

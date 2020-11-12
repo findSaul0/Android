@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/PrimoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_margin="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inserisci il nuemro di cartelle:"/>
+
+        <EditText
+            android:id="@+id/tvEdit"
+            android:hint="0"
+            android:layout_margin="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/Send"
+            android:layout_margin="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Invia_Numero"
+            android:text="Send"/>
+
+    </LinearLayout>
+
+
+        <ScrollView
+            android:layout_below="@+id/PrimoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/tvContenitoreCartelle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/black"
+                android:orientation="vertical">
+
+<!--
+                <FrameLayout
+                    android:id="@+id/frameCartella0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+
+                <FrameLayout
+                    android:id="@+id/frameCartella1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+
+                <FrameLayout
+                    android:id="@+id/frameCartella2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+
+                <FrameLayout
+                    android:id="@+id/frameCartella3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+
+                <FrameLayout
+                    android:id="@+id/frameCartella4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <FrameLayout
+                    android:id="@+id/frameCartella5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <FrameLayout
+                    android:id="@+id/frameCartella6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <FrameLayout
+                    android:id="@+id/frameCartella7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <FrameLayout
+                    android:id="@+id/frameCartella8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+-->
+            </LinearLayout>
+        </ScrollView>
+
+</RelativeLayout>
