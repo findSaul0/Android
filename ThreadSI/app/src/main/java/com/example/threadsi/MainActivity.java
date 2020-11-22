@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private int index = 1 ;
     private int counter = 0 ;
     ProgressBar pb;
-
+//modifica git
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
