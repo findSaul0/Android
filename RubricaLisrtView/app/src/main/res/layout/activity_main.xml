@@ -77,7 +77,6 @@
         android:textSize="40px"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:onClick="InsertNumber"
         android:id="@+id/ButtonInsert"/>
 
     <ListView

@@ -1,6 +1,9 @@
 package com.example.rubricalisrtview;
 
+import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +14,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CustomArrayAdapter extends ArrayAdapter<Contatto> {
@@ -56,7 +60,26 @@ public class CustomArrayAdapter extends ArrayAdapter<Contatto> {
     }
 
     private void removeItem(int p){
-        contattoList.remove(p);
-        notifyDataSetChanged();
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle("Sicuro di eliminare questo contatto?");
+
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                contattoList.remove(p);
+                notifyDataSetChanged();
+            }
+        });
+
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
+
 }
