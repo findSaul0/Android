@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3€"
+            android:textSize="50px"/>
+
+        <FrameLayout
+            android:layout_width="1px"
+            android:layout_height="50px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5€"
+            android:layout_marginLeft="50px"
+            android:textSize="50px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7€"
+            android:layout_marginLeft="50px"
+            android:textSize="50px"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="40px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50px"
+            android:text="Primo:"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/primo_uno"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/primo_due"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/primo_tre"
+                android:onClick="onRadioButtonClicked"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="65px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50px"
+            android:text="Secondo:"/>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/secondo_uno"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/secondo_due"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/secondo_tre"
+                android:onClick="onRadioButtonClicked"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="68px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50px"
+            android:text="Contorno:"/>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/contorno_uno"
+                android:onClick="onRadioButtonClicked"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/contorno_due"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/contorno_tre"
+                android:onClick="onRadioButtonClicked"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="28px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50px"
+            android:text="Frutta:"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:id="@+id/frutta_uno"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/frutta_due"
+                android:onClick="onRadioButtonClicked"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/frutta_tre"
+                android:onClick="onRadioButtonClicked"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="Totale:"
+        android:id="@+id/totale"
+        android:layout_gravity="center"
+        android:layout_marginTop="80px"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:layout_gravity="center"
+        android:id="@+id/cassa"
+        android:layout_marginTop="50px"
+        android:text="Vai alla cassa"/>
+
+</LinearLayout>

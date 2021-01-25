@@ -1,75 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:id="@+id/grid_tris"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_marginTop="150dp"
-        android:layout_gravity="center"
         android:layout_height="wrap_content"
+        android:id="@+id/firtrow"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button_00"
-            android:layout_width="200px"
-            android:layout_height="200px" />
+        android:layout_width="200px"
+        android:layout_height="200px"/>
 
         <Button
             android:layout_width="200px"
-            android:layout_height="200px"
-            android:id="@+id/button_01"/>
+            android:layout_height="200px"/>
 
         <Button
             android:layout_width="200px"
-            android:layout_height="200px"
-            android:id="@+id/button_02"/>
+            android:layout_height="200px"/>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
+        android:layout_below="@id/firtrow"
         android:layout_height="wrap_content"
+        android:id="@+id/secondrow"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <Button
             android:layout_width="200px"
-            android:layout_height="200px"
-            android:id="@+id/button_03"/>
+            android:layout_height="200px"/>
 
         <Button
             android:layout_width="200px"
-            android:layout_height="200px"
-            android:id="@+id/button_04"/>
+            android:layout_height="200px"/>
 
         <Button
             android:layout_width="200px"
-            android:layout_height="200px"
-            android:id="@+id/button_05"/>
+            android:layout_height="200px"/>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/thirdrow"
+        android:layout_below="@id/secondrow"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <Button
             android:layout_width="200px"
-            android:layout_height="200px"
-            android:id="@+id/button_06"/>
+            android:layout_height="200px"/>
 
         <Button
             android:layout_width="200px"
-            android:layout_height="200px"
-            android:id="@+id/button_07"/>
+            android:layout_height="200px"/>
 
         <Button
             android:layout_width="200px"
-            android:layout_height="200px"
-            android:id="@+id/button_08"/>
+            android:layout_height="200px"/>
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
