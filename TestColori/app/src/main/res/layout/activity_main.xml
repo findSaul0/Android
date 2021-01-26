@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Domanda n.:"
+                android:id="@+id/domande"
+                android:layout_marginTop="10dp"
+                android:textSize="50px"/>
+
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:id="@+id/singolo"/>
+
+
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/allImage"
+                        android:layout_height="wrap_content">
+
+                        <TableRow>
+
+                            <ImageView
+                                android:layout_width="100px"
+                                android:onClick="ColorClick"
+                                android:layout_height="100px"
+                                android:id="@+id/rosso"/>
+
+                            <ImageView
+                                android:layout_width="100px"
+                                android:onClick="ColorClick"
+                                android:layout_height="100px"
+                                android:id="@+id/bianco"/>
+
+
+                            <ImageView
+                                android:layout_width="100px"
+                                android:layout_height="100px"
+                                android:onClick="ColorClick"
+                                android:id="@+id/verde"/>
+
+                            <ImageView
+                                android:layout_width="100px"
+                                android:onClick="ColorClick"
+                                android:layout_height="100px"
+                                android:id="@+id/blu"/>
+                        </TableRow>
+
+
+                        <TableRow>
+
+                            <ImageView
+                                android:layout_width="100px"
+                                android:onClick="ColorClick"
+                                android:layout_height="100px"
+                                android:id="@+id/nero"/>
+
+                            <ImageView
+                                android:layout_width="100px"
+                                android:onClick="ColorClick"
+                                android:layout_height="100px"
+                                android:id="@+id/giallo"/>
+
+
+                            <ImageView
+                                android:layout_width="100px"
+                                android:layout_height="100px"
+                                android:onClick="ColorClick"
+                                android:id="@+id/viola"/>
+
+                            <ImageView
+                                android:layout_width="100px"
+                                android:layout_height="100px"
+                                android:onClick="ColorClick"
+                                android:id="@+id/azzurro"/>
+                        </TableRow>
+
+                    </TableLayout>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rispsoste corrette:"
+                android:id="@+id/risposte"
+                android:textSize="50px"/>
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rispsoste errate:"
+                android:id="@+id/errate"
+                android:textSize="50px"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
