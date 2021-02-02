@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/ScrollView1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/authorName"
+        android:text="No selection"
+        android:textSize="32dp"
+        android:textColor="#0000FF"
+        android:padding="5dp"> </TextView>
+
+    <TextView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/quoteView"
+        android:text="No selection"
+        android:textSize="28sp"
+        android:padding="5dp"> </TextView>
+
+</LinearLayout>
