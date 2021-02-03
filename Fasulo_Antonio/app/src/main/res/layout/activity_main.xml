@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+            <TextView
+                android:background="@color/purple_200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MORRA CINESE"
+                android:textSize="50px"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Punteggio giocatore:"
+                android:id="@+id/tvGiocatore"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Punteggio app:"
+                android:id="@+id/tvApp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Partite pari:"
+                android:id="@+id/tvPari"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Partite totali:"
+                android:id="@+id/tvTotali"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100px"
+                android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:background="@color/purple_700"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="50px"
+                                android:text="Giocatore"/>
+
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/mossaGiocatore"/>
+
+                    </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="100px"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="50px"
+                        android:text="App"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="50px"
+                        android:id="@+id/mossaApp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gioca"
+                android:id="@+id/buttonMossa"
+                android:layout_marginTop="50px"
+                android:layout_gravity="center"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gioca modalità doppio"
+                android:id="@+id/buttonDoppio"
+                android:layout_marginTop="50px"
+                android:layout_gravity="center"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="VALORE FORBICI = 0"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="VALORE SASSO = 1"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_gravity="center"
+                android:text="VALORE CARTA = 2"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nuova Partita"
+                android:id="@+id/buttonNuova"
+                android:layout_gravity="center"
+                android:layout_marginTop="400px"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_gravity="center"
+                android:text="Prima di Giocare deve iniziare una Nuova Partita"/>
+
+
+
+</LinearLayout>
